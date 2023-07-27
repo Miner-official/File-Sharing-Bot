@@ -11,12 +11,19 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
 
 from bot import Bot
-from config import ADMINS, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT
+from config import ADMINS, FORCE_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT
 from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 
 
-
+START_MSG = """
+ʜᴇʟʟᴏ {first}
+ 
+ɪ ᴀᴍ ꜰɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ʙʏ @itz_sahil_official❤️  
+ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇs ɪɴ sᴘᴇᴄɪꜰɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ꜰʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ ᴀɴᴅ ᴛʜɪs ᴀʟʟ ʙᴇᴄᴀᴜsᴇ ᴏꜰ @itz_sahil_official ❤️‍🔥
+  
+sᴏ ʙᴇ ɢʀᴀᴛᴇꜰᴜʟ ᴛᴏᴡᴀʀᴅs ᴍʏ ᴏᴡɴᴇʀ ᴡʜᴏ ᴄʀᴇᴀᴛᴇᴅ ᴍᴇ ᴡɪᴛʜ ᴛʜᴇɪʀ ʜᴀʀᴅᴡᴏʀᴋ🥀.
+"""
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
@@ -93,8 +100,8 @@ async def start_command(client: Client, message: Message):
                 ]
             ]
         )
-        await message.reply_text(
-            text = START_MSG.format(
+        await message.reply_photo(photo="https://telegra.ph/file/0299f59be082c455af11b.jpg",
+            caption = START_MSG.format(
                 first = message.from_user.first_name,
                 last = message.from_user.last_name,
                 username = None if not message.from_user.username else '@' + message.from_user.username,
