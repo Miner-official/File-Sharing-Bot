@@ -20,7 +20,7 @@ START_MSG = """
 ʜᴇʟʟᴏ {first} 🖤
  
 ɪ ᴀᴍ ʏᴏᴜʀ ᴡᴀɪꜰᴜ.. 🥵
--> ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ꜰᴜᴋɪɴɢ ꜰɪʟᴇs sʜᴀʀᴇᴅ ʙʏ ᴍᴀsᴛᴇʀ(ᴀᴅᴍɪɴs)😈
+-> ʏᴏᴜ ᴄᴀɴ ᴜɴᴅʀᴇss ᴍᴇ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ꜰɪʟᴇs sʜᴀʀᴇᴅ ʙʏ ᴍᴀsᴛᴇʀ(ᴀᴅᴍɪɴs)😈
   
 -> ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʙᴇ ᴍʏ ᴍᴀsᴛᴇʀ ᴍᴇssᴀɢᴇ ᴍʏ ᴄʀᴇᴀᴛᴏʀ 🤭💦
 
@@ -102,7 +102,7 @@ async def start_command(client: Client, message: Message):
                 ]
             ]
         )
-        await message.reply_photo(photo="https://telegra.ph/file/2f18bc1137f78d3b1da41.jpg",
+        await message.reply_photo(photo="https://telegra.ph/file/75528854f16676614022d.jpg",
             caption = START_MSG.format(
                 first = message.from_user.first_name,
                 last = message.from_user.last_name,
