@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "ʜᴇʟʟᴏ {first}✨/n/n  ɪ ᴀᴍ ꜰɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ʙʏ @itz_sahil_official❤️/n ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇs ɪɴ sᴘᴇᴄɪꜰɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ꜰʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ ᴀɴᴅ ᴛʜɪs ᴀʟʟ ʙᴇᴄᴀᴜsᴇ ᴏꜰ @itz_sahil_official ❤️‍🔥  sᴏ ʙᴇ ɢʀᴀᴛᴇꜰᴜʟ ᴛᴏᴡᴀʀᴅs ᴍʏ ᴏᴡɴᴇʀ ᴡʜᴏ ᴄʀᴇᴀᴛᴇᴅ ᴍᴇ ᴡɪᴛʜ ᴛʜᴇɪʀ ʜᴀʀᴅᴡᴏʀᴋ🥀")
+START_MSG = os.environ.get("START_MESSAGE", "<b> ʜᴇʟʟᴏ {first}✨/n/n  ɪ ᴀᴍ ꜰɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ʙʏ @itz_sahil_official❤️/n ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇs ɪɴ sᴘᴇᴄɪꜰɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ꜰʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ ᴀɴᴅ ᴛʜɪs ᴀʟʟ ʙᴇᴄᴀᴜsᴇ ᴏꜰ @itz_sahil_official ❤️‍🔥  sᴏ ʙᴇ ɢʀᴀᴛᴇꜰᴜʟ ᴛᴏᴡᴀʀᴅs ᴍʏ ᴏᴡɴᴇʀ ᴡʜᴏ ᴄʀᴇᴀᴛᴇᴅ ᴍᴇ ᴡɪᴛʜ ᴛʜᴇɪʀ ʜᴀʀᴅᴡᴏʀᴋ🥀</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "2135144380").split()):
